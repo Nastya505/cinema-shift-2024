@@ -1,0 +1,61 @@
+.p-1{
+    padding: var(--offset-base-size);
+}
+.pt-2{
+    padding-top:calc(var(--offset-base-size) * 2);
+}
+
+.pb-2{
+    padding-bottom:calc(var(--offset-base-size) * 2);
+}
+.pl-4{
+    padding-left:calc(var(--offset-base-size) * 4);
+}
+.pr-4{
+    padding-right:calc(var(--offset-base-size) * 4);
+}
+.pl-5{
+    padding-left:calc(var(--offset-base-size) * 5);
+}
+.pr-5{
+    padding-right:calc(var(--offset-base-size) * 5);
+}
+.m-5{
+    margin: calc(var(--offset-base-size) * 5);
+}
+.mt-4{
+    margin-top: calc(var(--offset-base-size) * 4);
+}
+.mt-5{
+    margin-top: calc(var(--offset-base-size) * 5);
+}
+.mt-10{
+    margin-top: calc(var(--offset-base-size) * 10);
+}
+.mt-15{
+    margin-top: calc(var(--offset-base-size) * 15);
+}
+.mb-5{
+    margin-bottom: calc(var(--offset-base-size) * 5);
+}
+.mb-6{
+    margin-bottom: calc(var(--offset-base-size) * 6);
+}
+.mb-10{
+    margin-bottom: calc(var(--offset-base-size) * 10);
+}
+.mb-14{
+    margin-bottom: calc(var(--offset-base-size) * 14);
+}
+.mb-15{
+    margin-bottom: calc(var(--offset-base-size) * 15);
+}
+.mb-8{
+    margin-bottom: calc(var(--offset-base-size) * 8);
+}
+.ml-5{
+    margin-left: calc(var(--offset-base-size) * 5);
+}
+.mr-15{
+    margin-right: calc(var(--offset-base-size) * 15);
+}

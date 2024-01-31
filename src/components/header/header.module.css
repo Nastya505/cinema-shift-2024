@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: calc(var(--offset-base-size) * 8);
+    height: 83px;
+}
+
+.nav{
+    display: flex;
+    gap: calc(var(--offset-base-size) * 8);
+    align-items: center;
+}
+.link{
+    color: var(--clr-1);
+    font-family: var(--ff-1);
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-medium);
+    text-decoration: none;
+    line-height: 24px;
+}

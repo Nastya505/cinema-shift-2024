@@ -1,0 +1,42 @@
+@import url(box.css);
+@import url(typography.css);
+
+:root{
+  --ff-1: 'Inter', sans-serif;
+  --ff-2: 'Roboto', sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --fs-small: 12px;
+  --fs-medium: 14px;
+  --fs-regular: 16px;
+  --fs-large: 20px;
+  --fs-big: 24px;
+
+  --offset-base-size: 4px;
+
+  --clr-1:#344051;
+  --clr-2:#141C24;
+  --clr-3: #FFB219;
+  --clr-4: #FFFFFF;
+  --clr-5:#9534D2;
+  --clr-6:#4ECF53;
+  --clr-7:#ECF9F2;
+  --clr-8:#97A1AF;
+  --clr-9:#712D9C;
+  --clr-10:#CED2DA;
+}
+body {
+  margin: 0;
+  font-family:var(--ff-1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+  width: min(100%, 960px);
+  margin-inline: auto;
+}
