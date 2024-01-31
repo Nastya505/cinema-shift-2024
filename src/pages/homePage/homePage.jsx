@@ -18,10 +18,10 @@ const HomePage = () => {
 
     return (
         <div>
-            <h1>Афиша</h1>
+            <h1 className={`${styles.title} ml-4`}>Афиша</h1>
             <div className={styles.wrapper}>
                 {movies.map((movie) => (
-                    <Card img={movie.img} title={movie.name} subtitle={movie.description} genre={movie.genres} year={movie.releaseDate} rating={movie.userRatings.kinopoisk}                               />
+                    <Card id={movie.id} img={movie.img} title={movie.name} subtitle={movie.description} genre={movie.genres} year={movie.releaseDate} rating={movie.userRatings.kinopoisk}                               />
                 ))}
             </div>
         </div>

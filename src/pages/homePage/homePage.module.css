@@ -2,7 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: calc(var(--offset-base-size) * 8);
-    justify-content: center;
+    justify-content: left;
     align-items: top;
     margin-inline: auto;
+}
+.title{
+    color: var(--clr-2);
+    font-family: var(--ff-1);
+    font-size: var(--fs-big);
+    font-weight: var(--fw-bold);
+    line-height: 32px;
 }
