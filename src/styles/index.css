@@ -15,6 +15,7 @@
   --fs-regular: 16px;
   --fs-large: 20px;
   --fs-big: 24px;
+  --fs-extra-big: 32px;
 
   --offset-base-size: 4px;
 
@@ -30,6 +31,9 @@
   --clr-10:#CED2DA;
   --clr-11:#637083;
   --clr-12:#F5F5F8;
+}
+*{
+  box-sizing: border-box;
 }
 body {
   margin: 0;

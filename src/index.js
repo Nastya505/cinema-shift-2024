@@ -5,11 +5,16 @@ import App from './components/app/app.jsx';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
+import '@mantine/core/styles.css';
+import {  MantineProvider } from '@mantine/core';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <MantineProvider >
         <App />
+      </MantineProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

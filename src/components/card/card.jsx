@@ -3,30 +3,19 @@ import styles from './card.module.css';
 import start from '../../images/star.svg';
 import { Link } from 'react-router-dom';
 import Button from '../button/button';
+import StarRating from '../starRating/starRating';
 
-const StarRating = ({ rating }) => {
-    const stars = [];
-    for (let i = 1; i <= 5; i++) {
-      if (i <= rating) {
-        stars.push(<span key={i}>&#9733;</span>); // Full star unicode
-      } else {
-        stars.push(<span key={i}>&#9734;</span>); // Empty star unicode
-      }
-    }
-  
-    return <div>{stars}</div>;
-  };
-
-  
-const Card = ({id,img, title, subtitle, genre, year, rating}) => {
+const Card = ({id,img, title, subtitle, genre, date, country, rating}) => {
     const API = "https://shift-backend.onrender.com";
+
+    const year = date.slice(-4);
 
     return (
       
             <div className={styles.card} key={id}>
                 <div className={styles.imgWrapper}>
                     <img className={styles.img} src={API + img} alt={title} />
-                    <div className={styles.block}><span className='medium'>{genre[0]}</span> {year}</div>
+                    <div className={styles.block}><span className='medium'>{genre}</span> {country}, {year}</div>
                 </div>
                 <div className={styles.info}>
                     <div className={styles.title}>{title}</div>

@@ -11,6 +11,7 @@ const HomePage = () => {
     const getMovies = async () => {
         const response = await axios.get(API_TODAY);
         setMovies(response.data.films);
+
     }
     React.useEffect(() => {
         getMovies();
@@ -21,7 +22,7 @@ const HomePage = () => {
             <h1 className={`${styles.title} ml-4`}>Афиша</h1>
             <div className={styles.wrapper}>
                 {movies.map((movie) => (
-                    <Card id={movie.id} img={movie.img} title={movie.name} subtitle={movie.description} genre={movie.genres} year={movie.releaseDate} rating={movie.userRatings.kinopoisk}                               />
+                    <Card id={movie.id} img={movie.img} title={movie.name} subtitle={movie.description} genre={movie.genres[0]} country={movie.country.name} date={movie.releaseDate} rating={movie.userRatings.kinopoisk} />
                 ))}
             </div>
         </div>
